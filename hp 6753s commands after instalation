@@ -1,0 +1,34 @@
+initial commands for a new instalation of debian in a HP 6753s laptop
+
+give access to sudo group to a user
+
+ su -
+ usermod -aG sudo user
+
+remove CDROM repositories
+
+sudo nano /etc/apt/sources.list
+ # comment with "#" the lines that make reference to cdrom
+ 
+enable screen back light
+
+ cd /etc/default/grub
+ sudo cp grub grub-backup 
+ sudo nano grub
+ 
+Around the 11th line, there will be something like: GRUB_CMDLINE_LINUX_DEFAULT="quiet splash". 
+ Change it to GRUB_CMDLINE_LINUX_DEFAULT="quiet splash splash acpi_backlight=native" O
+
+ sudo update-grub
+
+install nonfree ATI drivers
+ add repository
+ 
+ nano /etc/apt/sources.list 
+ deb http://deb.debian.org/debian buster main contrib non-free
+ 
+ apt update
+ 
+ apt-get install firmware-amd-graphics libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all
+
+ (copied from https://wiki.debian.org/AtiHowTo )
