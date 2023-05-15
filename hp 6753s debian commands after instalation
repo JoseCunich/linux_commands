@@ -29,6 +29,21 @@ install nonfree ATI drivers
  
  apt update
  
- apt-get install firmware-amd-graphics libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all
+ sudo apt install firmware-amd-graphics libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all
 
  (copied from https://wiki.debian.org/AtiHowTo )
+ 
+ install git to copy this file
+ 
+ sudo apt install git
+ 
+ Clonar este archivo
+  git clone https://github.com/JoseCunich/linux_commands.git
+ 
+instalar gestor de Firewall
+ sudo apt install ufw
+ 
+Enable SSH server
+ sudo apt install openssh-server
+ sudo systemctl enable ssh
+ sudo ufw allow ssh
