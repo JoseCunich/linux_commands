@@ -1,0 +1,12 @@
+conectar clientes y servidor mediante SSH con llaves (no contraseña)
+
+En computado cliente correr
+ ssh-keygen
+ 
+ para mayor seguridad poner contraseña a la clave privada
+ 
+Para transferir la clave publica al servidor
+ ssh-copy.id remote_host_ip
+ 
+Con esto la proxima vez que se conecte al servidor se solicitará la contraseña de la clave privada
+posteriormente ya no ser
