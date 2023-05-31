@@ -5,6 +5,13 @@ give access to sudo group to a user
  su -
  usermod -aG sudo user
 
+ install git to copy this file
+ 
+ sudo apt install git
+ 
+ Clonar este archivo
+  git clone https://github.com/JoseCunich/linux_commands.git
+  
 remove CDROM repositories
 
 sudo nano /etc/apt/sources.list
@@ -22,23 +29,15 @@ Around the 11th line, there will be something like: GRUB_CMDLINE_LINUX_DEFAULT="
  sudo update-grub
 
 install nonfree ATI drivers
- add repository
+ add repositories contrib and non-free
  
  nano /etc/apt/sources.list 
  deb http://deb.debian.org/debian buster main contrib non-free
  
  apt update
- 
  sudo apt install firmware-amd-graphics libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all
 
  (copied from https://wiki.debian.org/AtiHowTo )
- 
- install git to copy this file
- 
- sudo apt install git
- 
- Clonar este archivo
-  git clone https://github.com/JoseCunich/linux_commands.git
  
 instalar gestor de Firewall
  sudo apt install ufw
