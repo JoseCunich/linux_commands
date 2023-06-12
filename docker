@@ -1,0 +1,13 @@
+listar las imagenes locales
+docker ps
+
+bajar una imagen
+docker pull <imagen>:<tag>
+
+crear un contenedor y que corra
+docker run <contenedor>:<tags>
+
+por ejemplo, correr código de la ultima versión de python
+
+por ejemplo, correr una base de datos mysql en docker
+docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=secret -v $HOME/mysql-data:/var/lib/mysql -d mysql:8.0
