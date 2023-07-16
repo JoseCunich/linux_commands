@@ -16,6 +16,11 @@ remove CDROM repositories
 
 sudo nano /etc/apt/sources.list
  # comment with "#" the lines that make reference to cdrom
+
+en debian 12 hay un error con los repositorios que quedan despues de la instalación, cambiar los presentes por
+deb https://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+deb-src https://deb.debian.org/debian-security/ bookworm-security main non-free-firmware 
+
  
 enable screen back light
 
