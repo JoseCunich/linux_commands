@@ -1,0 +1,9 @@
+UFW uncomplicated firewall
+
+sudo apt install ufw
+
+sudo ufw enable #activa el firewall
+
+sudo ufw allow ssh-server #permite conexion ssh 
+
+sudo ufw disable
