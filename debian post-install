@@ -1,0 +1,13 @@
+sumar usuario a grupo sudoers
+  su - 
+  # poner contraseña rrot
+
+  usermod -aG sudo usuario
+
+install snap package manager
+
+  sudo apt install snapd
+
+instalar spotify
+  sudo snap install spotify
+
