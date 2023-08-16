@@ -4,10 +4,10 @@ sumar usuario a grupo sudoers
 
   usermod -aG sudo usuario
 
-install snap package manager
+install flatpack package manager (ojo, no instalar gestor de paquetes snap)
 
-  sudo apt install snapd
+  sudo apt install flatpack
 
-instalar spotify
-  sudo snap install spotify
+permitir acceso por escritorio remoto en pantalla de login
 
+  sudo apt install xrdp
