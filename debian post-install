@@ -6,7 +6,7 @@ sumar usuario a grupo sudoers
 
 install flatpack package manager (ojo, no instalar gestor de paquetes snap)
 
-  sudo apt install flatpack
+  sudo apt install flatpak
 
 permitir acceso por escritorio remoto en pantalla de login
 
