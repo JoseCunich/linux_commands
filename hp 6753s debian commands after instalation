@@ -33,7 +33,8 @@ Around the 11th line, there will be something like: GRUB_CMDLINE_LINUX_DEFAULT="
 
  sudo update-grub
 
-install nonfree ATI drivers
+
+install nonfree ATI and WiFi drivers
  add repositories contrib and non-free
  
  nano /etc/apt/sources.list 
@@ -43,7 +44,9 @@ install nonfree ATI drivers
  sudo apt install firmware-amd-graphics libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all
 
  (copied from https://wiki.debian.org/AtiHowTo )
- 
+ sudo apt install firmaware-b43-installer
+ (reiniciar)
+
 instalar gestor de Firewall
  sudo apt install ufw
  
