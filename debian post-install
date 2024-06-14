@@ -1,6 +1,6 @@
 sumar usuario a grupo sudoers
   su - 
-  # poner contraseña rrot
+  # poner contraseña root
 
   usermod -aG sudo usuario
 
