@@ -1,5 +1,8 @@
 conectar clientes y servidor mediante SSH con llaves (no contraseña)
 
+para conocer IP en computador host
+ip a
+
 En computado cliente correr
  ssh-keygen
  
