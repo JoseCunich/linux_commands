@@ -4,6 +4,12 @@ sumar usuario a grupo sudoers
 
   usermod -aG sudo usuario
 
+instalar sudo
+  apt install sudo
+
+reiniciar
+  shutdown now
+
 install flatpack package manager (ojo, no instalar gestor de paquetes snap)
 
   sudo apt install flatpak
